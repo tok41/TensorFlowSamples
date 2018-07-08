@@ -1,0 +1,11 @@
+
+*.pyc
+*.out
+
+*.png
+*.gz
+*.csv
+
+logs/
+out/
+test/
