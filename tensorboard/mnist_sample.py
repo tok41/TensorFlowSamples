@@ -50,7 +50,7 @@ def train():
 
     with tf.name_scope('accuracy'):
         with tf.name_scope('correcr'):
-            correct = tf.equal(tf.argmax(y, 1), y_)
+            correct = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
         with tf.name_scope('accuracy'):
             accuracy = accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
     tf.summary.scalar('accuracy', accuracy)
